@@ -187,8 +187,12 @@ body.dark-mode #theme-toggle:hover {
   background: rgba(135, 250, 143, 0.885);
 }
 
-body.dark-mode #linkedin-button:hover {
+body.dark-mode #linkedin-button {
   background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode #linkedin-button:hover {
+  background: rgba(135, 250, 143, 0.885);
 }
 
 .footer {
