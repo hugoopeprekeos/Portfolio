@@ -166,6 +166,31 @@ body.dark-mode #theme-toggle:hover {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
+#linkedin-button {
+  position: absolute;
+  left: 2%;
+  text-decoration: none;
+  color: var(--toggle-color);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: color 0.4s ease, background-color 0.4s ease;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgb(246, 246, 206);
+}
+
+#linkedin-button:hover {
+  background: rgba(135, 250, 143, 0.885);
+}
+
+body.dark-mode #linkedin-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .footer {
   text-align: center;
   padding-top: 180px;
@@ -256,5 +281,13 @@ body.dark-mode #theme-toggle:hover {
 
   #theme-toggle {
     position: absolute;
+  }
+
+  #linkedin-button {
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }
