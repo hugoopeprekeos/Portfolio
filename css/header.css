@@ -1,0 +1,162 @@
+.header-container {
+  justify-content: center;
+  margin-top: 10px;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  pointer-events: auto;
+}
+
+.nav-wrapper {
+  border-radius: 999px;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease,
+    box-shadow 0.3s ease, padding 0.3s ease;
+  padding: 0;
+  pointer-events: auto;
+}
+
+.nav-wrapper.scrolled {
+  background: var(--nav-bg-scrolled);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 35px var(--nav-shadow-scrolled);
+  padding: 8px 12px;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.4s ease;
+}
+
+.nav-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background: var(--indicator-bg);
+  backdrop-filter: blur(6px);
+  border-radius: 999px;
+  transition: all 0.55s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  color: var(--toggle-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.4s ease, transform 0.6s ease;
+  position: absolute;
+  right: 5%;
+}
+
+#theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode #theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sun-icon,
+.moon-icon {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+#opportunities-button {
+  text-decoration: none;
+  position: absolute;
+  left: 5%;
+  background: #fafad4;
+  padding: 10px 22px;
+  border-radius: 777px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+#opportunities-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+  background: rgba(156, 244, 162, 0.885);
+}
+
+body.dark-mode #opportunities-button {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode #opportunities-button:hover {
+  background: rgba(135, 250, 143, 0.885);
+}
+
+@media (max-width: 768px) {
+  .nav a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #theme-toggle {
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-wrapper {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav a {
+    padding: 8px 12px;
+    flex: 1;
+    text-align: center;
+  }
+
+  #theme-toggle {
+    top: 24px;
+    right: 15px;
+    padding: 6px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #opportunities-button {
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
