@@ -2,22 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap");
 
 :root {
-  --bg-color: #fbfcdb;
+  --bg-color: #f5cb24;
   --text-color: #2f3a35;
   --heading-color: #0f4c3a;
   --nav-bg-scrolled: rgba(255, 255, 255, 0.15);
   --nav-shadow-scrolled: rgba(0, 0, 0, 0.12);
   --indicator-bg: rgba(255, 255, 255, 0.45);
-  --toggle-color: #2f3a35;
 }
 
 body.dark-mode {
-  --bg-color: #2c4a42;
+  --bg-color: #091c44;
   --text-color: #dfe7e4;
   --heading-color: #ffffff;
   --nav-bg-scrolled: rgba(0, 0, 0, 0.25);
   --indicator-bg: rgba(255, 255, 255, 0.08);
-  --toggle-color: #dfe7e4;
 }
 
 body {
@@ -60,8 +58,23 @@ body::before {
 }
 
 body.dark-mode::before {
-  opacity: 0.15;
-  filter: grayscale(0.4);
+  content: "";
+  position: fixed;
+  top: var(--mouse-y);
+  left: var(--mouse-x);
+  width: 650px;
+  height: 650px;
+  z-index: -1;
+  opacity: 0.55;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.1) 35%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transition: opacity 0.25s ease-out;
+  pointer-events: none;
 }
 
 .hero {

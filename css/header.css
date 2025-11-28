@@ -61,7 +61,7 @@
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
-  color: var(--toggle-color);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
