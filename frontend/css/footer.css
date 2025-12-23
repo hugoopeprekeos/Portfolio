@@ -164,7 +164,6 @@
     margin-left: auto;
   }
 
-  /* Center social icons */
   .footer-content > a:not(.cv-button):not(.back-to-top) {
     order: 2;
   }

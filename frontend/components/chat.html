@@ -1,0 +1,30 @@
+<div id="chat-widget" class="chat-closed">
+  <div class="chat-header-widget">
+    <img src="assets/avatar.webp" class="chat-avatar" />
+    <div>
+      <div class="chat-title">Hugo Bot</div>
+      <div class="chat-subtitle">Ask me anything</div>
+    </div>
+    <button
+      id="chatClose"
+      type="button"
+      aria-label="Close chat"
+      class="chat-close"
+    >
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M6 6L18 18M18 6L6 18"
+          fill="none"
+          stroke="#E5E7EB"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <div class="chat-body">
+    <div class="chat-messages" id="widgetMessages"></div>
+    <div class="chat-buttons" id="widgetButtons"></div>
+  </div>
+</div>

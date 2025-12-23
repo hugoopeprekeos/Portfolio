@@ -36,11 +36,11 @@
 .nav a {
   position: relative;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px 16px;
   border-radius: 999px;
   text-decoration: none;
-  color: var(--text-color);
+  color: #2f4f5f;
   transition: color 0.4s ease;
 }
 
@@ -61,7 +61,7 @@
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
-  color: var(--text-color);
+  color: #2f4f5f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,34 +83,23 @@ body.dark-mode #theme-toggle:hover {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-#opportunities-button {
-  text-decoration: none;
-  position: absolute;
-  left: 5%;
-  background: #d6e9fa;
-  padding: 10px 22px;
-  border-radius: 777px;
-  font-size: 15px;
+#headerChatToggle {
+  font-family: Inter, sans-serif;
+  background: none;
+  border: none;
+  padding: 0;
   font-weight: 500;
-  color: var(--text-color);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s ease;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 16px;
+  color: #2f4f5f;
+  cursor: pointer;
 }
 
-#opportunities-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
-  background: rgba(156, 244, 162, 0.885);
+body.dark-mode #headerChatToggle {
+  color: white;
 }
 
-body.dark-mode #opportunities-button {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode #opportunities-button:hover {
-  background: rgba(135, 250, 143, 0.885);
+body.dark-mode .nav a {
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -128,12 +117,6 @@ body.dark-mode #opportunities-button:hover {
   .nav a {
     padding: 8px 16px;
     font-size: 14px;
-  }
-
-  #opportunities-button {
-    position: static;
-    padding: 8px 16px;
-    font-size: 13px;
   }
 
   #theme-toggle {
@@ -169,12 +152,6 @@ body.dark-mode #opportunities-button:hover {
     flex: 1;
     text-align: center;
     font-size: 13px;
-  }
-
-  #opportunities-button {
-    order: 1;
-    font-size: 12px;
-    padding: 8px 14px;
   }
 
   #theme-toggle {

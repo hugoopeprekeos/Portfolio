@@ -42,8 +42,14 @@ function initHeader() {
 
     links.forEach((link) => {
       link.addEventListener("click", (e) => {
-        if (link.getAttribute("href").startsWith("#")) {
+        const href = link.getAttribute("href");
+        if (href.startsWith("#")) {
           e.preventDefault();
+          const targetId = href.substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          }
         }
         links.forEach((l) => l.classList.remove("active"));
         link.classList.add("active");

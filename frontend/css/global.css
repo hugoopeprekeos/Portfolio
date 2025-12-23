@@ -24,7 +24,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: #2f4f5f;
   opacity: 0;
   transition: background-color 0.3s ease, color 0.3s ease,
     opacity 0.3s ease-in-out;
@@ -53,27 +53,15 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
+  background-image: url("../assets/clouds.png");
+  background-repeat: repeat-x;
+  background-position: center 110px;
+  background-size: auto 100%;
+  opacity: 0.6;
+  filter: blur(7px);
 
-  background: radial-gradient(
-      ellipse at 40% 65%,
-      rgba(255, 255, 255, 0.85) 0%,
-      rgba(255, 255, 255, 0.75) 20%,
-      rgba(255, 255, 255, 0.45) 45%,
-      rgba(255, 255, 255, 0.2) 65%,
-      rgba(255, 255, 255, 0) 80%
-    ),
-    radial-gradient(
-      ellipse at 40% 65%,
-      rgba(255, 255, 255, 0.18) 0%,
-      rgba(255, 255, 255, 0.05) 50%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    linear-gradient(180deg, #d7eafd 0%, #b6d7f4 40%, #89c4f4 100%);
-
-  background-blend-mode: screen, screen, normal;
-  filter: blur(15px);
+  pointer-events: none;
 }
-
 body.dark-mode::before {
   content: "";
   position: fixed;
@@ -122,15 +110,14 @@ body.dark-mode .star {
 }
 
 .hero {
+  padding-top: 60px;
   text-align: center;
-  padding-top: 180px;
-  padding-bottom: 180px;
 }
 
 .hero h1 {
   font-family: "Poppins", sans-serif;
-  color: var(--heading-color);
-  font-size: 120px;
+  color: #f5f7fa;
+  font-size: 80px;
   font-weight: 700;
   margin: 0;
   line-height: 1.2;
@@ -145,6 +132,10 @@ body.dark-mode .star {
   max-width: 520px;
   margin-left: auto;
   margin-right: auto;
+}
+
+body.dark-mode .hero .subtitle {
+  color: #7f9fb3;
 }
 
 @media (max-width: 768px) {
