@@ -2,6 +2,6 @@
   "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
-    "dev": "uvicorn backend.app.main:app --reload"
+    "dev": "uvicorn api.index:app --reload"
   }
 }
