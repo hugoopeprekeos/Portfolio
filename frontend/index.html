@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/chat.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/chat.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
 
     <title>Hugo Pérez • Software Engineer</title>
   </head>
@@ -41,55 +43,157 @@
 
       <!-- ABOUT SECTION -->
       <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <div class="about-content">
-          <p>
-            I don’t have a fixed way of starting projects, but I do have a clear
-            idea of how I like to approach them. When a project has both
-            front-end and back-end, I usually start with a basic idea of both
-            parts. I don’t jump straight into coding, because that often turns
-            into work that ends up being deleted. I prefer to think through the
-            solution, visualize the project, and put ideas on paper before I
-            start coding. I’ve only recently entered this field, so I’m
-            constantly learning. There’s almost always something new, whether it
-            comes from an implementation or from a mistake, and that part of the
-            process is what I enjoy the most. This portfolio is a project I’ve
-            been working on during my afternoons after university. It’s not
-            something I made quickly to find a job, but a way to consolidate
-            what I’m learning and make it visible. With AI, portfolios have lost
-            some of their weight since anyone can build one now, but I don’t see
-            that as a negative thing if it’s used as a tool and learning never
-            stops. This portfolio isn’t finished, and it’s not meant to be. It’s
-            simply a snapshot of where I am right now and how I understand the
-            process of learning and building.
+        <div class="about-container">
+          <h2 class="about-title">
+            I take my time to understand the software I build.
+          </h2>
+          <h3 class="about-headline">Building and learning from Girona.</h3>
+          <p class="about-intro">
+            I didn’t start with a clear goal or a defined path. What brought me
+            here was curiosity and the need to understand how things work. Over
+            time, that curiosity turned into a desire to build complete
+            projects, thinking not only about how they look, but also about the
+            logic behind them.
           </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="card-title">Before writing code</h4>
+              <p class="card-text">
+                I rarely jump straight into coding. I prefer to slow down, think
+                through the problem, visualize the solution, and sketch ideas
+                before writing a single line of code.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <h4 class="card-title">Learning through mistakes</h4>
+              <p class="card-text">
+                Most of what I learn comes from things not working as expected.
+                Trying, breaking, fixing, and understanding why. That process is
+                what I enjoy the most.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- SKILLS SECTION (NEW) -->
+      <!-- SKILLS SECTION -->
       <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <!-- Placeholder Skills -->
-          <div class="skill-card">
-            <div class="skill-icon">💻</div>
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, React</p>
+        <div class="skills-container">
+          <div class="skills-header">
+            <h2>Tools I use</h2>
+            <p>
+              The programming languages and tools I'm most
+              <strong>comfortable</strong> working with to build software in a
+              thoughtful and effective way.
+            </p>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h3>Backend</h3>
-            <p>Node.js, Express, Python</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">🛠️</div>
-            <h3>Tools</h3>
-            <p>Git, VS Code, Docker</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">🎨</div>
-            <h3>Design</h3>
-            <p>Figma, UI/UX Principles</p>
+
+          <div class="skills-grid">
+            <div class="skills-card">
+              <h3>Programming languages</h3>
+              <p class="card-description">
+                The languages I rely on daily for problem solving and building
+                software.
+              </p>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-icon">🐍</div>
+                  <span>Python</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">📜</div>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"></div>
+                  <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"></div>
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frameworks & Tools -->
+            <div class="skills-card">
+              <h3>Frameworks & tools</h3>
+              <p class="card-description">
+                Key frameworks and tools I use to build projects efficiently.
+              </p>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-icon">⚛️</div>
+                  <span>React / Next.js</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"></div>
+                  <span>FastAPI</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">🐳</div>
+                  <span>Docker</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">🐘</div>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">🍃</div>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Exploring -->
+            <div class="skills-card">
+              <h3>Things I'm exploring</h3>
+              <p class="card-description">
+                s I'm diving deeper into these areas to expand my capabilities.
+              </p>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-icon">🔍</div>
+                  <span>TypeScript</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">🛒</div>
+                  <span>E-commerce</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
