@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap");
 
 :root {
-  --bg-color: #7fc7e9;
+  --bg-color: #2f9acc;
   --text-color: #234048;
   --heading-color: #0a1f27;
   --nav-bg-scrolled: rgba(255, 255, 255, 0.15);
@@ -112,6 +112,7 @@ body.dark-mode .star {
 .hero {
   padding-top: 60px;
   text-align: center;
+  padding-bottom: 120px;
 }
 
 .hero h1 {
