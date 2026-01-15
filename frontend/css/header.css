@@ -40,7 +40,7 @@
   padding: 10px 16px;
   border-radius: 999px;
   text-decoration: none;
-  color: #2f4f5f;
+  color: #ffffff;
   transition: color 0.4s ease;
 }
 
@@ -90,7 +90,7 @@ body.dark-mode #theme-toggle:hover {
   padding: 0;
   font-weight: 500;
   font-size: 16px;
-  color: #2f4f5f;
+  color: #ffffff;
   cursor: pointer;
 }
 

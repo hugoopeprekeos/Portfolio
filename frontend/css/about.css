@@ -69,6 +69,10 @@
   border-radius: 4px;
 }
 
+.progress-75 {
+  width: 75%;
+}
+
 .current-phase {
   font-style: italic;
   font-size: 14px;
